@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  margin: 0;
+  /* transition: all .5s ease; */
+}
+
+
+@keyframes bounce-in {
+  0% {opacity:0; top:-50px;}
+  50% {top:10px;}
+  100% {opacity: 1; top:50%;}
+}
+
+@keyframes slide-up {
+  0% {opacity: 0; transform: translate(-50%,-50%) scale(0)}
+  15% {opacity: 1; transform: translate(-50%,-50%) scale(1); top: -50%;}
+  25% {opacity: 1; transform: translate(-50%,-50%) scale(.7);}
+  75% {opacity: 1; transform: translate(-50%,-50%) scale(.7);}
+  85% {opacity: 1; transform: translate(-50%,-50%); top: -90px;}
+  90% {transform: translate(-50%,-50%) scale(1); top: -90px;}
+  100% {opacity: 0; transform: translate(-50%,-50%) scale(1); top: -90px;}
+}
+
+@keyframes tack-disappear {
+  0% {opacity:1; transform: translate(-50%,-50%);}
+  100% {opacity:0; transform: translate(-50%,-30px);}
+}
+
+
+@keyframes appear {
+  0% {transform: translate(0,calc(-50% + 40px)); opacity: 0; visibility: hidden; display: block;}
+  40% {opacity: 0;}
+  100% {transform: translate(0,-50%); opacity: 1; visibility: visible;}
+}
+
+@keyframes disappear {
+  0% {transform: translate(0,-50%); opacity: 1; visibility: visible;}
+  50% {opacity: 0; }
+  100% {transform: translate(0,calc(-50% - 40px)); opacity: 0; visibility: hidden; display: none;}
+}
+
+@keyframes appear-top {
+  0% {transform: translate(0,calc(40px)); opacity: 0; visibility: hidden; display: block;}
+  40% {opacity: 0;}
+  100% {transform: translate(0,0); opacity: 1; visibility: visible;}
+}
+
+
+.project {
+  opacity: 0;
+}
+.project:hover {
+  opacity: 1;
+}
+
+/* .container-project {
+  opacity: 1;
+}
+.container-project:hover {
+  opacity: .3!important;
+  transition: all .5s ease!important;
+} */
