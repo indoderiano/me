@@ -6,30 +6,8 @@ class Intro extends Component {
     state = { 
         // display:false
         isEmailCopied: false,
-        email: 'mde50526@gmail.com',
-        testupdater: 1
+        email: 'mde50526@gmail.com'
      }
-
-    componentDidMount=()=>{
-        this.setState((state,props)=>{
-            console.log('updater first ',state.testupdater)
-            return {
-                testupdater: state.testupdater+1,
-            }
-        })
-        // console.log('didmount first ',this.state.testupdater)
-        this.setState((state,props)=>{
-            console.log('updater second ',state.testupdater)
-            return {
-                testupdater: state.testupdater+1,
-            }
-        })
-
-        // this.setState({testupdater: this.state.testupdater+1})
-        // this.setState({testupdater: this.state.testupdater+1})
-
-        // console.log('didmount ',this.state.testupdater)
-    }
 
     // componentDidUpdate=()=>{
     //     if(this.props.show && this.state.display!==true){
@@ -168,8 +146,7 @@ class Intro extends Component {
                         padding:'.25em 0 0'
                     }}
                 >
-                    I am Frontend & Backend Developer 
-                    {this.state.testupdater}
+                    I am Frontend & Backend Developer
                 </div>
                 <div
                     style={{

@@ -11,6 +11,7 @@ import Menu from './pages/Menu'
 import Intro from './pages/Intro'
 import About from './pages/About'
 import Portfolios from './pages/Portfolios'
+import ProfilePic from './pages/Components/ProfilePic'
 
 const initialState = { isScroll: true }
 
@@ -191,6 +192,17 @@ function App() {
       }}
     >
       <Logo color='white' scale={.6}/>
+      {/* <ProfilePic
+        style={{
+          position: 'absolute',
+          top: '50%',
+          right: '30px',
+          transform: 'translate(0, -50%)',
+          width: '300px',
+          paddingTop: '300px',
+        }} 
+      /> */}
+
       <Author show={section>=0} isIntro={section<=0}/>
       <Intro show={section===0}/>
       <About show={section===1}/>
