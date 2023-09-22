@@ -39,13 +39,13 @@ class Pin extends Component {
                 />
                 <i  
                     id='tack'
-                    className="fas fa-chevron-down"
+                    className="fa-solid fa-chevron-down"
                     style={{
                         position:'absolute',
                         top:'50%',
                         left:'50%',
                         transform:'translate(-50%,-50%)',
-                        fontSize:'12px',
+                        fontSize:'18px',
                         padding:'3px 5px',
                         // opacity:'0',
                         // borderRadius:'20px',
